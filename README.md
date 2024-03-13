@@ -1,1 +1,1 @@
-# fcuk
+# everyday happy
