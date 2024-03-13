@@ -27,18 +27,18 @@ module axi_stream_insert_header#(
 // Your code here
 
 /********************寄存器*************************/
-reg 						last_in_reg_1		= 'd0	;
-reg 						last_in_reg_2		= 'd0	;
+reg 				last_in_reg_1		= 'd0	;
+reg 				last_in_reg_2		= 'd0	;
 reg [DATA_WD-1 : 0] 		data_out_reg_1		= 'd0	;
 reg [DATA_WD-1 : 0] 		data_out_reg_2		= 'd0	;
-reg [DATA_BYTE_WD-1 : 0] 	keep_in_reg		    = 'd0   ;
-reg [DATA_WD-1 : 0]		    header_out_reg		= 'd0   ;
-reg 					    insert_flag			= 'd0   ;
-reg [DATA_BYTE_WD-1 : 0]    keep_insert_out_reg	= 'd0   ;
+reg [DATA_BYTE_WD-1 : 0] 	keep_in_reg	        = 'd0   ;
+reg [DATA_WD-1 : 0]		header_out_reg		= 'd0   ;
+reg 			        insert_flag	  	= 'd0   ;
+reg [DATA_BYTE_WD-1 : 0]        keep_insert_out_reg	= 'd0   ;
 reg [DATA_WD-1 : 0]	        header_data_out_reg	= 'd0   ;
-reg                         ready_insert_flag	= 'd0   ;
-reg [DATA_BYTE_WD-1 : 0]    keep_out_reg	    = 'd0   ;      
-reg [1:0]                   insert_flag_reg             ;
+reg                            ready_insert_flag	= 'd0   ;
+reg [DATA_BYTE_WD-1 : 0]       keep_out_reg	    = 'd0   ;      
+reg [1:0]                    insert_flag_reg             ;
 reg [1:0]                   last_out_reg                ;
 
 /********************网表型*****************************/
